@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <center><h1>Registration form</h1></center>
+    <form action="">
+        
+        <label for="nam">enter name : </label>
+        <input type="text" name="" id="nam"><br>
+
+        <label for="mail">Enter email : </label>
+        <input type="email" name="" id="mail"><br>
+
+        <label for="pasword">Enter password : </label>
+        <input type="password" name="" id="pasword"><br>
+
+        <input type="submit" value="register here" id="sub">
+
+    </form>
+
+
+    <script>
+        var d1 = document.getElementById("mail")
+        var d2 = document.getElementById("pasword")
+        var d3 = document.getElementById("nam")
+ 
+         submit = document.getElementById("sub")
+         
+         /*console.log(d1.innerText)
+         console.log(d2.innerText)
+         console.log(d3.innerText)*/
+ 
+         submit.addEventListener("click",()=>{
+             localStorage.setItem("mail",d1.value)
+             localStorage.setItem("pasword",d2.value)
+             localStorage.setItem("nam",d3.value)
+            
+           if(d1.value == "" && d2.value == "" && d3.value =="")
+           {
+               alert("don't register on empty strings")
+               
+        }
+        else{
+            alert("successfully registerd")
+            window.open("./login.html")
+            window.location.assign("./login.html")
+           }
+
+             
+             
+         })
+      
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <center><h1>Login form</h1></center>
+    <form action="">
+        
+       
+        <label for="email">Enter email : </label>
+        <input type="email" name="" id="email"><br>
+
+        <label for="password">Enter password : </label>
+        <input type="password" name="" id="password"><br>
+
+        <input type="submit" value="login here" id = "submit">
+
+    </form>
+<script>
+ 
+
+    lg1 = document.getElementById("email")
+
+    lg2 = document.getElementById("password")
+
+    sub = document.getElementById("submit")
+
+    rg1 = localStorage.getItem("mail")
+    console.log(rg1)
+
+    rg2 = localStorage.getItem("pasword")
+    console.log(rg2)
+
+    sub.addEventListener("click",()=>{
+        if(lg1.value == rg1 && lg2.value == rg2 )
+        {
+            alert("successfully login and data matched")
+        }
+        else{
+            alert("data mismatch enter correct data")
+        }
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

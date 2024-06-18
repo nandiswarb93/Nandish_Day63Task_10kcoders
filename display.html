@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        body = document.body
+
+
+
+    var data1 = localStorage.getItem("data1")
+    var data2 = localStorage.getItem("data2")
+    var data3 = localStorage.getItem("data3")
+
+    var p1 = document.createElement("p") 
+    p1.innerText = "entered mail : " + data1
+
+    var p2 = document.createElement("p") 
+    p2.innerText = "entered password : "+data2
+
+    var p3 = document.createElement("p") 
+    p3.innerText = "entered name :"+data3
+
+    console.log(data1)
+    console.log(data2)
+    console.log(data3)
+
+    body.appendChild(p1)
+    body.appendChild(p2)
+    body.appendChild(p3)
+    
+
+
+
+
+
+    </script>
+</body>
+</html>
